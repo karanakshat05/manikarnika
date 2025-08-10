@@ -1,16 +1,3 @@
-import Image from "next/image";
-import { Navbar } from "@/components/layout/Navbar";
-import Footer from "@/components/layout/footer";
-import AboutUs from "@/components/about_us";
-
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-       <Navbar></Navbar>
-       <AboutUs></AboutUs>
-       <Footer></Footer>
-      </main>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:423ddce01650df096b24522c4b527c37475fdfc02c3cbc0de97282306ef96484
+size 671
