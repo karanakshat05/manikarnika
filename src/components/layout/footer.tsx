@@ -2,12 +2,16 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full bg-[#0b0614] text-white">
+    <footer className="bg-[#000000] text-white w-full">
       {/* Main content */}
       <div className="mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-screen-xl">
         {/* Logo and Description */}
         <div>
-          <img src="/images/logo_wb.png" alt="Manikarnika Events Logo" className="mb-4" />
+          <img
+            src="/images/logo_wb.png"
+            alt="Manikarnika Events Logo"
+            className="mb-4"
+          />
           <p className="text-gray-300">
             Bringing unforgettable events and exclusive artist performances to life.
             Experience the magic with Manikarnika Events.
