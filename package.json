@@ -2,7 +2,6 @@
   "name": "manikarnika",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -10,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.23.12",
     "next": "15.4.6",
     "react": "19.1.0",
@@ -27,5 +27,4 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
-  
 }
