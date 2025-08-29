@@ -21,8 +21,6 @@ export function Navbar(){
                     <div className="bg-white text-black hover:text-gray-300 px-3 py-2 rounded"><Link href="/connect">Contact</Link></div>
                 </div>
             </div>
-            
-        </nav>
-        
+        </nav>   
     );
 }
