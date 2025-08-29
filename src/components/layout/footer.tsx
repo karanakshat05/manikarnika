@@ -1,3 +1,85 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6c10c11e23eeaed1af22061b1246c2fea2b0a8505facfdb34e8d4aced87380b
-size 3154
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
+export default function Footer() {
+  return (
+    <footer 
+    id="footer"
+    className="absolute bg-gradient-to-br from-black via-[#2b0035] to-[#0d0d0d] text-white w-full">
+
+      {/* Main content */}
+      <div className="mx-auto py-10 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-screen-xl">
+        {/* Logo and Description */}
+        <div>
+          <img
+            src="/images/logo_wb.png"
+            alt="Manikarnika Events Logo"
+            className="mb-4"
+          />
+          <p className="text-gray-300">
+            Bringing unforgettable events and exclusive artist performances to life.
+            Experience the magic with Manikarnika Events.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className="font-bold mb-4">Quick Links</h3>
+          <ul className="space-y-2">
+            <li><a href="#" className=" hover:decoration-[#705C2E]">Home</a></li>
+            <li><a href="/#about" className=" hover:decoration-[#705C2E]">About</a></li>
+            <li><a href="/artists" className=" hover:decoration-[#705C2E]">Exclusive Artists </a></li>
+            <li><a href="/#footer" className=" hover:decoration-[#705C2E]">Contact </a></li>
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h3 className="font-bold mb-4">Services</h3>
+          <ul className="space-y-2">
+            <li>Artist Bookings</li>
+            <li>Event Management</li>
+            <li>Production Consultancy</li>
+            <li>Esports</li>
+            <li>Fashion Shows</li>
+            <li>Movie Promotions</li>
+          </ul>
+        </div>
+
+        {/* Subscribe */}
+        <div>
+          <h3 className="font-bold mb-4">Stay Updated</h3>
+          <form className="flex">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="p-2 rounded-l bg-gray-800 text-white flex-1"
+            />
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-pink-400 to-purple-500 px-4 rounded-r"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+
+      {/* Gradient Line */}
+      <div className="w-full h-[2px] bg-gradient-to-r from-blue-500 to-pink-500"></div>
+
+      {/* Bottom Bar */}
+      <div className="flex flex-col md:flex-row justify-between items-center px-6 py-6 max-w-screen-xl mx-auto">
+        <p className="text-sm text-gray-400">
+          © 2025 Manikarnika Events. All Rights Reserved.
+        </p>
+
+        <div className="flex space-x-4 mt-4 md:mt-0">
+          <a href="#" className="hover:text-blue-500"><FaFacebookF size={20} /></a>
+          <a href="#" className="hover:text-blue-400"><FaTwitter size={20} /></a>
+          <a href="https://www.instagram.com/manikarnikaevents/?hl=en" className="hover:text-pink-500"><FaInstagram size={20} /></a>
+          <a href="https://www.linkedin.com/company/manikarnikaevents/" className="hover:text-blue-700"><FaLinkedinIn size={20} /></a>
+        </div>
+      </div>
+    </footer>
+  );
+}

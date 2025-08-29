@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bee9527db1cf85b84212186e1a561f77873bd018eed9f59c6cd2f87f7d3d0f23
-size 776
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevents unwanted horizontal scrollbars */
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
