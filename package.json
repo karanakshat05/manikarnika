@@ -2,11 +2,13 @@
   "name": "manikarnika",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "git lfs install && git lfs pull && next build"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
@@ -26,4 +28,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+  
 }
