@@ -5,6 +5,3 @@
 *.webm filter=lfs diff=lfs merge=lfs -text
 
 # Large images (optional, only if you expect very big files)
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
